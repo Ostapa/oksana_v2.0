@@ -1,0 +1,141 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Oksana_4._5._2.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %></title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3YzEQL6DKtXDes4yeuW4zDDSN2IMA2Cs&callback=initMap">
+    </script>
+    <script src="Scripts/functions.js"></script>
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="respond" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <nav class="navbar navbar-custom">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed burger" data-toggle="collapse" data-target="#toogle-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar white"></span>
+                        <span class="icon-bar white"></span>
+                        <span class="icon-bar white"></span>
+                    </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="toogle-nav">
+                    <ul class="nav navbar-nav navbar-nav-custom">
+                        <li><a href="Home.aspx">Home<span class="sr-only">(current)</span></a></li>
+                        <li><a href="Listings.aspx">Listings</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle ddl-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Buying <span class="caret"></span></a>
+                            <ul class="dropdown-menu ddl-menu">
+                                <li><a href="BuyersGuide.aspx">Buyer's Guide</a></li>
+                                <li><a href="DownPayment.aspx">Down Payment Savings</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle ddl-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Selling <span class="caret"></span></a>
+                            <ul class="dropdown-menu ddl-menu">
+                                <li><a href="SellersGuide.aspx">Seller's Guide</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle ddl-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Calculators <span class="caret"></span></a>
+                            <ul class="dropdown-menu ddl-menu">
+                                <li><a href="MortgageCalc.aspx">Mortgage Calculator</a></li>
+                                <li><a href="LandTransferTax.aspx">Land Transfer Tax Calculator</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="Contact.aspx">Contact</a></li>
+                    </ul>
+
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+        <div class="container-fluid footer">
+            <div class="row">
+                <div class="col-md-2 col-lg-offset-0 col-xs-12 ">
+                    <img class="img-circle round-portrait img-responsive center-block" src="Images/oksana_portrait_round.jpg" alt="Realtor's portrait" />
+                </div>
+                <div class="col-md-3 col-lg-3 col-xs-12 center-block info">
+                    <h3 class="light-text">Oksana Bratkov</h3>
+                    <h4 class="light-text">Sales representative</h4>
+                    <p>
+                        Right At Home Realty Inc.,
+                                    <br>
+                        Brokerage
+                    </p>
+                    <p>480 Eglinton Ave West</p>
+                    <p>Mississauga, Ontario L5R 0G2</p>
+                    <p>Cell: <a href="tel:(416)629-8661">(416)629-8661</a></p>
+                    <p>Office: <a href="tel:(905)-565-9200">(905)565-9200</a></p>
+                    <p>Email: <a href="mailto:oksana_ca@hotmail.com">oksana_ca@hotmail.com</a></p>
+                </div>
+                <div class="col-md-2 col-xs-12 real-logo hidden-sm hidden-xs">
+                    <a href="https://rightathomerealty.com" target="_blank">
+                        <img class="img-responsive center-block" src="Images/rightathome.png" /></a>
+                </div>
+                <div class="site-map col-md-2 col-md-offset-1 col-lg-offset-2 hidden-sm hidden-xs ">
+                    <ul>
+                        <li><a href="Home.aspx">Home</a></li>
+                        <li><a href="Listings.aspx">Listings</a></li>
+                        <li><a href="BuyersGuide.aspx">Buyer's Guide</a></li>
+                        <li><a href="DownPayment.aspx">Down Payment Savings</a></li>
+                        <li><a href="SellersGuide.aspx">Seller's Guide</a></li>
+                        <li><a href="MortgageCalc.aspx">Mortgage Calculator</a></li>
+                        <li><a href="LandTransferTax.aspx">Land Transfer Calculator</a></li>
+                        <li><a href="Contact.aspx">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row centered bottom">
+                <div class="col-xs-12 hidden-md hidden-lg">
+                    <h5><a href="Sitemap.aspx">Sitemap</a> | <a href="https://rightathomerealty.com" target="_blank">Right At Home Realty</a></h5>
+                </div>
+                <div class="col-xs-12">
+                    <h5>&copy; All Rights Reserved. Copyright 2017.</h5>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

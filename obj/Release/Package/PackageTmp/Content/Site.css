@@ -1,0 +1,287 @@
+﻿/* Header */
+.header {
+    background-size: cover;
+    background-attachment: fixed;
+    height: 800px;
+    padding-top: 100px;
+}
+
+.header-wrapper {
+    height: 320px;
+    background: rgba(255, 255, 255, 0.6);
+    color: #0288d1;
+    text-align: center;
+}
+
+.no-height {
+    height: 100px;
+    margin: 50px;
+}
+
+.mobile-header {
+    color: #0288d1;
+}
+
+.light-text {
+    font-weight: 100;
+}
+
+.name {
+    font-family: 'Parisienne', cursive;
+    font-size: 65px;
+    margin: 0;
+    padding: 0;
+    line-height: 60px;
+}
+
+.get-started {
+    width: 150px;
+    height: 50px;
+    margin: 100px auto;
+    transition: all .3s ease-in-out;
+}
+
+.get-started-btn {
+    width: 150px;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 1.4em;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+    background: #0288d1;
+    border-radius: 5px;
+    border: 3px solid #0288D1;
+    cursor: pointer;
+    outline: none;
+}
+
+    .get-started-btn:hover {
+        background: transparent;
+        color: #0288d1;
+    }
+
+
+/* Header backgrounds */
+.home-back {
+    background-image: url(../Images/cover-page.jpg);
+}
+
+.tax-back {
+}
+
+.sellers-back {
+    background-image: url(../Images/sellers_guide.jpeg);
+}
+
+.down-back {
+    background-image: url(../Images/down_payment.jpeg);
+}
+
+.buyers-back {
+    background-image: url(../Images/buyers_guide.jpeg);
+}
+
+
+/***** Updated Styles *****/
+body, html {
+    height: 100%;
+    font-family: 'Open Sans';
+}
+
+.navbar-custom {
+    background-color: #03A9F4;
+    border-radius: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+.navbar-nav-custom > li > a, .ddl-menu > li > a {
+    color: #fff;
+    font-size: larger;
+}
+
+    .navbar-nav-custom > li > a:hover,
+    .navbar-nav-custom > li > a:focus,
+    .navbar-custom .open > a {
+        background: #2288d1;
+    }
+
+.white {
+    background: #fff;
+}
+
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+    background-color: #2288d1;
+}
+
+.ddl-menu {
+    background-color: #2288d1;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    outline: none;
+}
+
+    .ddl-menu > li > a {
+        background-color: #03a9f4;
+        line-height: 3;
+        padding: 0 20px;
+    }
+
+        .ddl-menu > li > a:hover, .ddl-menu > li > a:focus {
+            background-color: #2288d1;
+            color: #fff;
+        }
+
+
+/* footer css*/
+.footer {
+    background-color: #01579B;
+    color: #fff;
+}
+
+
+.round-portrait {
+    border: 3px solid #fff;
+    margin-top: 10px;
+}
+
+.site-map {
+    margin-top: 20px;
+}
+
+    .site-map li {
+        margin: 5px;
+    }
+
+.footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.no-float {
+    float: none;
+}
+
+.centered {
+    text-align: center;
+}
+
+.bottom {
+    margin-top: 25px;
+}
+
+.bio-image {
+    margin-top: 50px;
+}
+
+.real-logo {
+    margin-top: 100px;
+    transition: all .2s ease-in-out;
+}
+
+/* Home: features*/
+.features-wrapper {
+    background: #0288d1;
+}
+
+.feature {
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    transition: all .2s ease-in-out;
+}
+
+    .feature:hover, .real-logo:hover {
+        transform: scale(1.1);
+    }
+
+.intro {
+    margin: 50px 0;
+}
+
+@media (max-width: 425px) {
+    .img-responsive {
+        max-width: 50%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .info {
+        text-align: center;
+        font-size: small;
+    }
+
+    .footer {
+        min-height: 550px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        min-height: 650px;
+    }
+
+    .info {
+        text-align: center;
+    }
+}
+
+/* Calculators */
+.submit-btn {
+    color: #fff;
+    background: #2288d1;
+    border: 2px solid #2288d1;
+    border-radius: 5px;
+    margin: 10px 0;
+    outline: none;
+    padding: 5px;
+    font-size: 1em;
+}
+
+    .submit-btn:hover {
+        background: transparent;
+        color: #2288d1;
+    }
+
+.checkbox-box {
+    margin: 10px;
+}
+
+.input-group-addon {
+    background-color: #03a9f4;
+    color: #fff;
+    min-width: 40px;
+}
+
+.mortgage-results h3, .article h3 {
+    color: #2288d1;
+}
+
+.last {
+    margin-bottom: 50px;
+}
+
+.calc-lbl {
+    margin-top: 15px;
+}
+
+.comments {
+    resize: vertical;
+}
+
+.contact {
+    width: 100px;
+}
+
+.map {
+    min-height: 450px;
+}
