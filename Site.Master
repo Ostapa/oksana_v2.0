@@ -6,7 +6,10 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %></title>
+    <meta name="description" content="Oksana Bratkov ( Оксана Братков ) is sales representative at Right At Home Realty Inc., Brokerage. Оренда та продаж нерухомості в Торонто." />
+    <meta name="keywords" content="Продаж, Оренда, Торонто, Нерухомість, Кондо, Rent, Find, Sell, Buy, House, Lease appartments, Toronto, Downtown, Mortage, Calculator, Оксана Братков, Oksana Bratkov, GTA, Condo, Condominium.">
+    <meta name="author" content="Oksana Bratkov">
+    <title><%: Page.Title %> | Sell with Oksana Bratkov (Оксана Братков).</title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
@@ -97,18 +100,20 @@
                     <img class="img-circle round-portrait img-responsive center-block" src="Images/oksana_portrait_round.jpg" alt="Realtor's portrait" />
                 </div>
                 <div class="col-md-3 col-lg-3 col-xs-12 center-block info">
-                    <h3 class="light-text">Oksana Bratkov</h3>
-                    <h4 class="light-text">Sales representative</h4>
-                    <p>
-                        Right At Home Realty Inc.,
-                                    <br>
-                        Brokerage
-                    </p>
-                    <p>480 Eglinton Ave West</p>
-                    <p>Mississauga, Ontario L5R 0G2</p>
-                    <p>Cell: <a href="tel:(416)629-8661">(416)629-8661</a></p>
-                    <p>Office: <a href="tel:(905)-565-9200">(905)565-9200</a></p>
-                    <p>Email: <a href="mailto:oksana_ca@hotmail.com">oksana_ca@hotmail.com</a></p>
+                    <address>
+                        <h3 class="light-text">Oksana Bratkov</h3>
+                        <h4 class="light-text">Sales representative</h4>
+                        <p>
+                            Right At Home Realty Inc.,
+                                        <br>
+                            Brokerage
+                        </p>
+                        <p>480 Eglinton Ave West</p>
+                        <p>Mississauga, Ontario L5R 0G2</p>
+                        <p>Cell: <a href="tel:(416)629-8661">(416)629-8661</a></p>
+                        <p>Office: <a href="tel:(905)-565-9200">(905)565-9200</a></p>
+                        <p>Email: <a href="mailto:oksana_ca@hotmail.com">oksana_ca@hotmail.com</a></p>
+                    </address>
                 </div>
                 <div class="col-md-2 col-xs-12 real-logo hidden-sm hidden-xs">
                     <a href="https://rightathomerealty.com" target="_blank">
